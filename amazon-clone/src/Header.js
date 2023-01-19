@@ -1,5 +1,7 @@
 import React from 'react'
 import './Header.css'
+import SearchIcon from '@mui/icons-material/Search';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
 function Header() {
   return (
@@ -17,6 +19,9 @@ function Header() {
                 className='header_searchInput' 
                 type='text'
             />
+            <SearchIcon 
+                className='header_searchIcon'
+            />
             {/* Logo */}
         </div>
 
@@ -24,32 +29,42 @@ function Header() {
         <div className='header_nav'>
 
             {/* First Button */}
-            <div className='header_navOptions_1'>
-                <span className='FirstButton_line1'>
+            <div className='header_option'>
+                <span className='header_optionLine1'>
                     Hello Guest
                 </span>
-                <span className='FirstButton_line2'>
+                <span className='header_optionLine2'>
                     Sign In
                 </span>
             </div>
 
             {/* Second Button */}
-            <div className='header_navOptions_2'>
-                <span className='FirstButton_line1'>
+            <div className='header_option'>
+                <span className='header_optionLine1'>
                     Return
                 </span>
-                <span className='FirstButton_line2'>
+                <span className='header_optionLine2'>
                     & Orders
                 </span>
             </div>
 
             {/* Third Button */}
-            <div className='header_navOptions_3'>
-                <span className='FirstButton_line1'>
+            <div className='header_option'>
+                <span className='header_optionLine1'>
                     Prime
                 </span>
-                <span className='FirstButton_line2'>
+                <span className='header_optionLine2'>
                     Membership
+                </span>
+            </div>
+
+            {/* Basket */}
+            <div className='header_optionBasket'>
+                <ShoppingCartIcon
+                    className='header_optionBasketIcon'
+                />
+                <span className='header_optionLine2 header_basketCount'>
+                    0
                 </span>
             </div>
 
