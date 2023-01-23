@@ -10,7 +10,8 @@ function Header() {
         {/* Left Logo */}
         <img 
             className='header_logo'
-            src='https://capebretonspectator.com/wp-content/uploads/2018/01/Amazon-Logo.jpg' 
+            src='http://pngimg.com/uploads/amazon/amazon_PNG11.png' 
+            alt="amazon logo"
         />
 
         {/* Search Bar */}
