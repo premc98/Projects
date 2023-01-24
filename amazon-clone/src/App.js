@@ -2,7 +2,8 @@ import './App.css';
 import React from "react";
 import Header from './Header';
 import Home from './Home';
-import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import Checkout from './Checkout'
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
 
 function App() {
@@ -11,22 +12,10 @@ function App() {
     <Router>
       <div className="App">
         
-        <Switch>
-
-          <Route path="/checkout">
-            <Header />
-            <h1>I AM A CHECKOUT PAGE</h1>
-          </Route>
-          
-          <Route path="/">
-            <Header />
-            <Home />
-            {/* Body */}
-          </Route>
-
-         
-        
-        </Switch>
+        <Routes>
+          <Route path="/checkout" element={[<Header />, <Checkout />]} />
+          <Route exact path="/" element={[<Header />, <Home />]} />
+        </Routes>
         
       </div>
     </Router>
