@@ -12,7 +12,7 @@
     z-index: 1;
 }
 
-.product__rating {
+.product_rating {
     display: flex;
 }
 
