@@ -64,14 +64,17 @@ function Header() {
             </div>
 
             {/* Basket */}
-            <div className='header_optionBasket'>
-                <ShoppingCartIcon
-                    className='header_optionBasketIcon'
-                />
-                <span className='header_optionLine2 header_basketCount'>
+            <Link to="/checkout">
+                <div className='header_optionBasket'>
+                    <ShoppingCartIcon
+                        className='header_optionBasketIcon'
+                    />
+                    <span className='header_optionLine2 header_basketCount'>
                     0
-                </span>
-            </div>
+                    </span>
+                </div>
+            </Link>
+            
 
         </div>
 
