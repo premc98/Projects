@@ -36,14 +36,17 @@ function Header() {
         <div className='header_nav'>
 
             {/* First Button */}
-            <div className='header_option'>
-                <span className='header_optionLine1'>
-                    Hello Guest
-                </span>
-                <span className='header_optionLine2'>
-                    Sign In
-                </span>
-            </div>
+            <Link to='login'>
+                <div className='header_option'>
+                    <span className='header_optionLine1'>
+                        Hello Guest
+                    </span>
+                    <span className='header_optionLine2'>
+                        Sign In
+                    </span>
+                </div>
+            </Link>
+            
 
             {/* Second Button */}
             <div className='header_option'>
