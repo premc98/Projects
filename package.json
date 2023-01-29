@@ -1,6 +1,24 @@
 {
   "dependencies": {
+    "firebase": "^9.16.0",
     "react-currency-format": "^1.1.0",
     "react-router-dom": "^6.7.0"
-  }
+  },
+  "name": "projects",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/premc98/Projects.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/premc98/Projects/issues"
+  },
+  "homepage": "https://github.com/premc98/Projects#readme",
+  "description": ""
 }

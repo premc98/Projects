@@ -1,8 +1,30 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { auth } from './firebase';
 import './Login.css'
 
 function Login() {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  
+  const signIn = e => {
+    e.preventDefault(); //to prevent page from refreshing
+
+  }
+
+  const createAccount = e => {
+    e.prevenDefault();
+
+    auth
+        .createUserWithEmailAndPassword(email, password)
+        .then((auth) => {
+            //succeessfully created user with email and password
+            console.log(auth);
+        })
+        .catch(error => alert(error.message))
+  }
+
+
   return (
     <div className='login'>
         <Link to='/'>
@@ -22,14 +44,16 @@ function Login() {
                 <h5>   
                     Email
                 </h5>
-                <input type='text' />
+                <input type='text' vlaue={email} onChange=
+                {e => setEmail(e.target.value)} />
 
                 <h5>
                     Password
                 </h5>
-                <input type='password' />
+                <input type='password' value={password} onChange=
+                {e => setPassword(e.target.value)} />
 
-                <button className='login_SignInButton'>
+                <button type='submit' className='login_SignInButton' onClick={signIn}>
                     Sign In
                 </button>
 
@@ -40,7 +64,7 @@ function Login() {
                 see our Privacy Notice, our Cookies Notice and our Interest-Based Ads Notice.
             </p>
 
-            <button className='login_createAccountButton'>
+            <button className='login_createAccountButton' onClick={createAccount}>
                 Create an Account
             </button>
 
