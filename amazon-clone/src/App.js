@@ -2,6 +2,7 @@ import './App.css';
 import React, { useEffect } from "react";
 import Header from './Header';
 import Home from './Home';
+import Payment from './Payment';
 import Checkout from './Checkout'
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Login from './Login';
@@ -42,6 +43,7 @@ function App() {
       <div className="App">
         
         <Routes>
+          <Route path='/payment' element={[<Header />, <Payment />]} />
           <Route path='/login' element={<Login />} />
           <Route path="/checkout" element={[<Header />, <Checkout />]} />
           <Route exact path="/" element={[<Header />, <Home />]} />
