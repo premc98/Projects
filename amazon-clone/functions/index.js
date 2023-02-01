@@ -31,7 +31,7 @@ app.post('/payments/create', async (request, response) => {
 })
 
 //Listen command
-exports.api = functions.https.onRequest(app);
+exports.api = functions.https.onRequest(app); //the endpoint of the api ends with /api cuz it is "export.api"
 
 // API endpoint
 // http://127.0.0.1:5001/clone-f6853/us-central1/api
