@@ -1,0 +1,429 @@
+[debug] [2023-02-01T20:33:38.596Z] ----------------------------------------------------------------------
+[debug] [2023-02-01T20:33:38.597Z] Command:       /usr/local/bin/node /usr/local/bin/firebase emulators:start
+[debug] [2023-02-01T20:33:38.598Z] CLI Version:   11.22.0
+[debug] [2023-02-01T20:33:38.598Z] Platform:      darwin
+[debug] [2023-02-01T20:33:38.598Z] Node Version:  v16.14.0
+[debug] [2023-02-01T20:33:38.605Z] Time:          Wed Feb 01 2023 15:33:38 GMT-0500 (Eastern Standard Time)
+[debug] [2023-02-01T20:33:38.605Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-02-01T20:33:38.657Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-02-01T20:33:38.657Z] > authorizing via signed-in user (s.premchander98@gmail.com)
+[info] i  emulators: Starting emulators: functions, hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, hosting"}}
+[debug] [2023-02-01T20:33:38.907Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[warn] ⚠  hosting: Hosting Emulator unable to start on port 5000, starting on 5002 instead. {"metadata":{"emulator":{"name":"hosting"},"message":"Hosting Emulator unable to start on port 5000, starting on 5002 instead."}}
+[debug] [2023-02-01T20:33:38.908Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-02-01T20:33:38.908Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5002}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2023-02-01T20:33:38.913Z] [hub] writing locator at /var/folders/4s/_53l048n17b07_dnjdb86c200000gp/T/hub-clone-f6853.json
+[debug] [2023-02-01T20:33:39.033Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-02-01T20:33:39.033Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-02-01T20:33:39.033Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5002}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, pubsub, storage\u001b[22m"}}
+[debug] [2023-02-01T20:33:39.036Z] defaultcredentials: writing to file /Users/premchandersatheesh/.config/firebase/s_premchander98_gmail.com_application_default_credentials.json
+[debug] [2023-02-01T20:33:39.040Z] Setting GAC to /Users/premchandersatheesh/.config/firebase/s_premchander98_gmail.com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /Users/premchandersatheesh/.config/firebase/s_premchander98_gmail.com_application_default_credentials.json"}}
+[debug] [2023-02-01T20:33:39.041Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-f6853/adminSdkConfig [none]
+[debug] [2023-02-01T20:33:39.481Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-f6853/adminSdkConfig 200
+[debug] [2023-02-01T20:33:39.482Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-f6853/adminSdkConfig {"projectId":"clone-f6853","storageBucket":"clone-f6853.appspot.com"}
+[debug] [2023-02-01T20:33:39.511Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-f6853/sites 
+[debug] [2023-02-01T20:33:40.089Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-f6853/sites 200
+[debug] [2023-02-01T20:33:40.089Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-f6853/sites {"sites":[{"name":"projects/clone-f6853/sites/clone-f6853","defaultUrl":"https://clone-f6853.web.app","appId":"1:337306334945:web:3d7742eecaa09f9af3e9a0","type":"DEFAULT_SITE"}]}
+[debug] [2023-02-01T20:33:40.089Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-f6853/webApps/1:337306334945:web:3d7742eecaa09f9af3e9a0/config [none]
+[debug] [2023-02-01T20:33:40.604Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-f6853/webApps/1:337306334945:web:3d7742eecaa09f9af3e9a0/config 200
+[debug] [2023-02-01T20:33:40.604Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-f6853/webApps/1:337306334945:web:3d7742eecaa09f9af3e9a0/config {"projectId":"clone-f6853","appId":"1:337306334945:web:3d7742eecaa09f9af3e9a0","storageBucket":"clone-f6853.appspot.com","apiKey":"AIzaSyAD_GiT4p3wS24nJCiZgQZByr4ybran50k","authDomain":"clone-f6853.firebaseapp.com","messagingSenderId":"337306334945","measurementId":"G-KKC48VJBR4"}
+[debug] [2023-02-01T20:33:40.612Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-f6853 [none]
+[debug] [2023-02-01T20:33:41.011Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-f6853 200
+[debug] [2023-02-01T20:33:41.011Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-f6853 {"projectId":"clone-f6853","projectNumber":"337306334945","displayName":"amazon-clone","name":"projects/clone-f6853","resources":{"hostingSite":"clone-f6853"},"state":"ACTIVE","etag":"1_0c3ec397-e12a-4e23-a6be-2ee8bf56dac3"}
+[info] i  hosting[clone-f6853]: Serving hosting files from: build {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mbuild\u001b[22m"}}
+[info] ✔  hosting[clone-f6853]: Local server: http://127.0.0.1:5002 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:5002\u001b[22m\u001b[24m"}}
+[info] i  ui: downloading ui-v1.11.2.zip... {"metadata":{"emulator":{"name":"ui"},"message":"downloading ui-v1.11.2.zip..."}}
+[debug] [2023-02-01T20:33:41.082Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.11.2.zip 
+[debug] [2023-02-01T20:33:41.189Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.11.2.zip 200
+[debug] [2023-02-01T20:33:41.189Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.11.2.zip [stream]
+[debug] [2023-02-01T20:33:45.292Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2023-02-01T20:33:45.292Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2023-02-01T20:33:45.292Z] Starting Emulator UI with command {"binary":"node","args":["/Users/premchandersatheesh/.cache/firebase/emulators/ui-v1.11.2/server/server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"/Users/premchandersatheesh/.cache/firebase/emulators/ui-v1.11.2/server/server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2023-02-01T20:33:45.397Z] Web / API server started at 127.0.0.1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
+[debug] [2023-02-01T20:33:45.397Z] Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
+[info] i  functions: Watching "/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions\" for Cloud Functions..."}}
+[debug] [2023-02-01T20:33:45.565Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-02-01T20:33:46.054Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.8.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-02-01T20:33:46.054Z] Building nodejs source
+[debug] [2023-02-01T20:33:46.054Z] Failed to find version of module node: reached end of search path /Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules
+[info] ✔  functions: Using node@16 from host. 
+[debug] [2023-02-01T20:33:46.056Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-02-01T20:33:46.060Z] Found firebase-functions binary at '/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-02-01T20:33:46.644Z] Serving at port 8894
+
+[debug] [2023-02-01T20:33:46.676Z] Got response from /__/functions.yaml {"endpoints":{},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-02-01T20:33:46.682Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: . {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Hosting   │ 127.0.0.1:5002 │ n/a                             │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2023-02-01T20:40:28.221Z] File /Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/index.js changed, reloading triggers"}}
+[debug] [2023-02-01T20:40:29.235Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-02-01T20:40:29.910Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.8.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-02-01T20:40:29.910Z] Building nodejs source
+[debug] [2023-02-01T20:40:29.911Z] Failed to find version of module node: reached end of search path /Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules
+[info] ✔  functions: Using node@16 from host. 
+[debug] [2023-02-01T20:40:29.912Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-02-01T20:40:29.913Z] Found firebase-functions binary at '/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-02-01T20:40:30.022Z] Serving at port 8304
+
+[debug] [2023-02-01T20:40:30.081Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-02-01T20:40:30.087Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[info] ✔  functions[us-central1-api]: http function initialized (http://127.0.0.1:5001/clone-f6853/us-central1/api). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/clone-f6853/us-central1/api)."}}
+[debug] [2023-02-01T20:41:11.567Z] [work-queue] {"queuedWork":["/clone-f6853/us-central1/api-2023-02-01T20:41:11.566Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-02-01T20:41:11.569Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/clone-f6853/us-central1/api-2023-02-01T20:41:11.566Z"],"workRunningCount":1}
+[debug] [2023-02-01T20:41:11.570Z] Accepted request GET /clone-f6853/us-central1/api --> us-central1-api
+[debug] [2023-02-01T20:41:11.580Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-02-01T20:41:11.582Z] [functions] Got req.url=/clone-f6853/us-central1/api, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/clone-f6853/us-central1/api, mapping to path=/"}}
+[debug] [2023-02-01T20:41:11.600Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2023-02-01T20:41:11.602Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
+[debug] [2023-02-01T20:41:12.255Z] [runtime-status] [64747] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [64747] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2023-02-01T20:41:12.255Z] [runtime-status] [64747] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [64747] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2023-02-01T20:41:12.256Z] [runtime-status] [64747] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [64747] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2023-02-01T20:41:12.256Z] [runtime-status] [64747] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [64747] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2023-02-01T20:41:12.279Z] [runtime-status] [64747] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [64747] Checked functions.config() {\"config\":{}}"}}
+[debug] [2023-02-01T20:41:12.279Z] [runtime-status] [64747] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [64747] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2023-02-01T20:41:12.279Z] [runtime-status] [64747] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [64747] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2023-02-01T20:41:12.280Z] [runtime-status] [64747] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [64747] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2023-02-01T20:41:12.280Z] [runtime-status] [64747] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [64747] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2023-02-01T20:41:12.280Z] [runtime-status] [64747] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [64747] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2023-02-01T20:41:12.342Z] [runtime-status] [64747] Functions runtime initialized. {"cwd":"/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions","node_version":"16.14.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [64747] Functions runtime initialized. {\"cwd\":\"/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions\",\"node_version\":\"16.14.0\"}"}}
+[debug] [2023-02-01T20:41:12.342Z] [runtime-status] [64747] Listening to port: /var/folders/4s/_53l048n17b07_dnjdb86c200000gp/T/fire_emu_93564b32208e4062.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [64747] Listening to port: /var/folders/4s/_53l048n17b07_dnjdb86c200000gp/T/fire_emu_93564b32208e4062.sock"}}
+[debug] [2023-02-01T20:41:12.419Z] [worker-us-central1-api-6704e3d2-a532-4e15-9bb6-ee2ca876796a]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-6704e3d2-a532-4e15-9bb6-ee2ca876796a]: IDLE"}}
+[debug] [2023-02-01T20:41:12.419Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[debug] [2023-02-01T20:41:12.419Z] [worker-us-central1-api-6704e3d2-a532-4e15-9bb6-ee2ca876796a]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-6704e3d2-a532-4e15-9bb6-ee2ca876796a]: BUSY"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
+[debug] [2023-02-01T20:41:12.424Z] [worker-us-central1-api-6704e3d2-a532-4e15-9bb6-ee2ca876796a]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-6704e3d2-a532-4e15-9bb6-ee2ca876796a]: IDLE"}}
+[debug] [2023-02-01T20:41:12.424Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[info] i  functions: Finished "api" in 2.245667ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in 2.245667ms"}}
+[info] >  TypeError: response.statusCode is not a function {"user":"TypeError: response.statusCode is not a function","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m TypeError: response.statusCode is not a function"}}
+[info] >      at /Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/index.js:16:45 {"user":"    at /Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/index.js:16:45","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     at /Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/index.js:16:45"}}
+[info] >      at Layer.handle [as handle_request] (/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/express/lib/router/layer.js:95:5) {"user":"    at Layer.handle [as handle_request] (/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/express/lib/router/layer.js:95:5)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     at Layer.handle [as handle_request] (/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/express/lib/router/layer.js:95:5)"}}
+[info] >      at next (/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/express/lib/router/route.js:144:13) {"user":"    at next (/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/express/lib/router/route.js:144:13)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     at next (/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/express/lib/router/route.js:144:13)"}}
+[info] >      at Route.dispatch (/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/express/lib/router/route.js:114:3) {"user":"    at Route.dispatch (/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/express/lib/router/route.js:114:3)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     at Route.dispatch (/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/express/lib/router/route.js:114:3)"}}
+[info] >      at Layer.handle [as handle_request] (/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/express/lib/router/layer.js:95:5) {"user":"    at Layer.handle [as handle_request] (/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/express/lib/router/layer.js:95:5)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     at Layer.handle [as handle_request] (/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/express/lib/router/layer.js:95:5)"}}
+[info] >      at /Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/express/lib/router/index.js:284:15 {"user":"    at /Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/express/lib/router/index.js:284:15","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     at /Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/express/lib/router/index.js:284:15"}}
+[info] >      at Function.process_params (/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/express/lib/router/index.js:346:12) {"user":"    at Function.process_params (/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/express/lib/router/index.js:346:12)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     at Function.process_params (/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/express/lib/router/index.js:346:12)"}}
+[info] >      at next (/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/express/lib/router/index.js:280:10) {"user":"    at next (/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/express/lib/router/index.js:280:10)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     at next (/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/express/lib/router/index.js:280:10)"}}
+[info] >      at jsonParser (/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/body-parser/lib/types/json.js:110:7) {"user":"    at jsonParser (/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/body-parser/lib/types/json.js:110:7)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     at jsonParser (/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/body-parser/lib/types/json.js:110:7)"}}
+[info] >      at Layer.handle [as handle_request] (/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/express/lib/router/layer.js:95:5) {"user":"    at Layer.handle [as handle_request] (/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/express/lib/router/layer.js:95:5)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     at Layer.handle [as handle_request] (/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/express/lib/router/layer.js:95:5)"}}
+[debug] [2023-02-01T20:41:15.686Z] File /Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/index.js changed, reloading triggers"}}
+[debug] [2023-02-01T20:41:16.688Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-02-01T20:41:17.132Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.8.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-02-01T20:41:17.133Z] Building nodejs source
+[debug] [2023-02-01T20:41:17.133Z] Failed to find version of module node: reached end of search path /Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules
+[info] ✔  functions: Using node@16 from host. 
+[debug] [2023-02-01T20:41:17.135Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-02-01T20:41:17.137Z] Found firebase-functions binary at '/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-02-01T20:41:17.229Z] Serving at port 8724
+
+[debug] [2023-02-01T20:41:17.265Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-02-01T20:41:17.269Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-02-01T20:41:17.272Z] [worker-pool] Shutting down IDLE worker (us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-api)"}}
+[debug] [2023-02-01T20:41:17.272Z] [worker-us-central1-api-6704e3d2-a532-4e15-9bb6-ee2ca876796a]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-6704e3d2-a532-4e15-9bb6-ee2ca876796a]: FINISHING"}}
+[debug] [2023-02-01T20:41:17.275Z] [worker-us-central1-api-6704e3d2-a532-4e15-9bb6-ee2ca876796a]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-6704e3d2-a532-4e15-9bb6-ee2ca876796a]: exited"}}
+[debug] [2023-02-01T20:41:17.275Z] [worker-us-central1-api-6704e3d2-a532-4e15-9bb6-ee2ca876796a]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-6704e3d2-a532-4e15-9bb6-ee2ca876796a]: FINISHED"}}
+[debug] [2023-02-01T20:41:30.850Z] [work-queue] {"queuedWork":["/clone-f6853/us-central1/api-2023-02-01T20:41:30.850Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-02-01T20:41:30.852Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/clone-f6853/us-central1/api-2023-02-01T20:41:30.850Z"],"workRunningCount":1}
+[debug] [2023-02-01T20:41:30.852Z] Accepted request GET /clone-f6853/us-central1/api --> us-central1-api
+[debug] [2023-02-01T20:41:30.862Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-02-01T20:41:30.862Z] [functions] Got req.url=/clone-f6853/us-central1/api, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/clone-f6853/us-central1/api, mapping to path=/"}}
+[debug] [2023-02-01T20:41:30.862Z] [worker-pool] Cleaned up workers for us-central1-api: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-api: 1 --> 0"}}
+[debug] [2023-02-01T20:41:30.870Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2023-02-01T20:41:30.871Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
+[debug] [2023-02-01T20:41:31.473Z] [runtime-status] [64782] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [64782] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2023-02-01T20:41:31.474Z] [runtime-status] [64782] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [64782] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2023-02-01T20:41:31.474Z] [runtime-status] [64782] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [64782] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2023-02-01T20:41:31.474Z] [runtime-status] [64782] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [64782] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2023-02-01T20:41:31.494Z] [runtime-status] [64782] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [64782] Checked functions.config() {\"config\":{}}"}}
+[debug] [2023-02-01T20:41:31.494Z] [runtime-status] [64782] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [64782] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2023-02-01T20:41:31.494Z] [runtime-status] [64782] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [64782] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2023-02-01T20:41:31.494Z] [runtime-status] [64782] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [64782] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2023-02-01T20:41:31.494Z] [runtime-status] [64782] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [64782] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2023-02-01T20:41:31.495Z] [runtime-status] [64782] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [64782] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2023-02-01T20:41:31.549Z] [runtime-status] [64782] Functions runtime initialized. {"cwd":"/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions","node_version":"16.14.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [64782] Functions runtime initialized. {\"cwd\":\"/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions\",\"node_version\":\"16.14.0\"}"}}
+[debug] [2023-02-01T20:41:31.549Z] [runtime-status] [64782] Listening to port: /var/folders/4s/_53l048n17b07_dnjdb86c200000gp/T/fire_emu_7362b33fb55e334c.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [64782] Listening to port: /var/folders/4s/_53l048n17b07_dnjdb86c200000gp/T/fire_emu_7362b33fb55e334c.sock"}}
+[debug] [2023-02-01T20:41:31.585Z] [worker-us-central1-api-44d9513a-7b61-4373-9c7a-ce638c446f2e]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-44d9513a-7b61-4373-9c7a-ce638c446f2e]: IDLE"}}
+[debug] [2023-02-01T20:41:31.585Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[debug] [2023-02-01T20:41:31.585Z] [worker-us-central1-api-44d9513a-7b61-4373-9c7a-ce638c446f2e]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-44d9513a-7b61-4373-9c7a-ce638c446f2e]: BUSY"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
+[debug] [2023-02-01T20:41:31.589Z] [worker-us-central1-api-44d9513a-7b61-4373-9c7a-ce638c446f2e]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-44d9513a-7b61-4373-9c7a-ce638c446f2e]: IDLE"}}
+[debug] [2023-02-01T20:41:31.589Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[info] i  functions: Finished "api" in 1.875917ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in 1.875917ms"}}
+[info] >  TypeError: response.statusCode is not a function {"user":"TypeError: response.statusCode is not a function","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m TypeError: response.statusCode is not a function"}}
+[info] >      at /Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/index.js:16:45 {"user":"    at /Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/index.js:16:45","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     at /Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/index.js:16:45"}}
+[info] >      at Layer.handle [as handle_request] (/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/express/lib/router/layer.js:95:5) {"user":"    at Layer.handle [as handle_request] (/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/express/lib/router/layer.js:95:5)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     at Layer.handle [as handle_request] (/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/express/lib/router/layer.js:95:5)"}}
+[info] >      at next (/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/express/lib/router/route.js:144:13) {"user":"    at next (/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/express/lib/router/route.js:144:13)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     at next (/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/express/lib/router/route.js:144:13)"}}
+[info] >      at Route.dispatch (/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/express/lib/router/route.js:114:3) {"user":"    at Route.dispatch (/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/express/lib/router/route.js:114:3)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     at Route.dispatch (/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/express/lib/router/route.js:114:3)"}}
+[info] >      at Layer.handle [as handle_request] (/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/express/lib/router/layer.js:95:5) {"user":"    at Layer.handle [as handle_request] (/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/express/lib/router/layer.js:95:5)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     at Layer.handle [as handle_request] (/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/express/lib/router/layer.js:95:5)"}}
+[info] >      at /Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/express/lib/router/index.js:284:15 {"user":"    at /Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/express/lib/router/index.js:284:15","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     at /Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/express/lib/router/index.js:284:15"}}
+[info] >      at Function.process_params (/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/express/lib/router/index.js:346:12) {"user":"    at Function.process_params (/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/express/lib/router/index.js:346:12)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     at Function.process_params (/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/express/lib/router/index.js:346:12)"}}
+[info] >      at next (/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/express/lib/router/index.js:280:10) {"user":"    at next (/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/express/lib/router/index.js:280:10)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     at next (/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/express/lib/router/index.js:280:10)"}}
+[info] >      at jsonParser (/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/body-parser/lib/types/json.js:110:7) {"user":"    at jsonParser (/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/body-parser/lib/types/json.js:110:7)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     at jsonParser (/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/body-parser/lib/types/json.js:110:7)"}}
+[info] >      at Layer.handle [as handle_request] (/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/express/lib/router/layer.js:95:5) {"user":"    at Layer.handle [as handle_request] (/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/express/lib/router/layer.js:95:5)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     at Layer.handle [as handle_request] (/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/express/lib/router/layer.js:95:5)"}}
+[debug] [2023-02-01T20:41:53.424Z] File /Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/index.js changed, reloading triggers"}}
+[debug] [2023-02-01T20:41:54.428Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-02-01T20:41:54.869Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.8.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-02-01T20:41:54.869Z] Building nodejs source
+[debug] [2023-02-01T20:41:54.870Z] Failed to find version of module node: reached end of search path /Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules
+[info] ✔  functions: Using node@16 from host. 
+[debug] [2023-02-01T20:41:54.870Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-02-01T20:41:54.872Z] Found firebase-functions binary at '/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-02-01T20:41:54.991Z] Serving at port 8005
+
+[debug] [2023-02-01T20:41:55.043Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-02-01T20:41:55.047Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-02-01T20:41:55.049Z] [worker-pool] Shutting down IDLE worker (us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-api)"}}
+[debug] [2023-02-01T20:41:55.049Z] [worker-us-central1-api-44d9513a-7b61-4373-9c7a-ce638c446f2e]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-44d9513a-7b61-4373-9c7a-ce638c446f2e]: FINISHING"}}
+[debug] [2023-02-01T20:41:55.055Z] [worker-us-central1-api-44d9513a-7b61-4373-9c7a-ce638c446f2e]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-44d9513a-7b61-4373-9c7a-ce638c446f2e]: exited"}}
+[debug] [2023-02-01T20:41:55.056Z] [worker-us-central1-api-44d9513a-7b61-4373-9c7a-ce638c446f2e]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-44d9513a-7b61-4373-9c7a-ce638c446f2e]: FINISHED"}}
+[debug] [2023-02-01T20:41:55.854Z] [work-queue] {"queuedWork":["/clone-f6853/us-central1/api-2023-02-01T20:41:55.854Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-02-01T20:41:55.854Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/clone-f6853/us-central1/api-2023-02-01T20:41:55.854Z"],"workRunningCount":1}
+[debug] [2023-02-01T20:41:55.854Z] Accepted request GET /clone-f6853/us-central1/api --> us-central1-api
+[debug] [2023-02-01T20:41:55.860Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-02-01T20:41:55.860Z] [functions] Got req.url=/clone-f6853/us-central1/api, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/clone-f6853/us-central1/api, mapping to path=/"}}
+[debug] [2023-02-01T20:41:55.860Z] [worker-pool] Cleaned up workers for us-central1-api: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-api: 1 --> 0"}}
+[debug] [2023-02-01T20:41:55.868Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2023-02-01T20:41:55.869Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
+[debug] [2023-02-01T20:41:56.506Z] [runtime-status] [64819] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [64819] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2023-02-01T20:41:56.506Z] [runtime-status] [64819] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [64819] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2023-02-01T20:41:56.506Z] [runtime-status] [64819] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [64819] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2023-02-01T20:41:56.506Z] [runtime-status] [64819] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [64819] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2023-02-01T20:41:56.520Z] [runtime-status] [64819] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [64819] Checked functions.config() {\"config\":{}}"}}
+[debug] [2023-02-01T20:41:56.520Z] [runtime-status] [64819] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [64819] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2023-02-01T20:41:56.520Z] [runtime-status] [64819] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [64819] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2023-02-01T20:41:56.520Z] [runtime-status] [64819] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [64819] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2023-02-01T20:41:56.521Z] [runtime-status] [64819] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [64819] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2023-02-01T20:41:56.521Z] [runtime-status] [64819] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [64819] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2023-02-01T20:41:56.566Z] [runtime-status] [64819] Functions runtime initialized. {"cwd":"/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions","node_version":"16.14.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [64819] Functions runtime initialized. {\"cwd\":\"/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions\",\"node_version\":\"16.14.0\"}"}}
+[debug] [2023-02-01T20:41:56.566Z] [runtime-status] [64819] Listening to port: /var/folders/4s/_53l048n17b07_dnjdb86c200000gp/T/fire_emu_715ca1d7e3a019ef.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [64819] Listening to port: /var/folders/4s/_53l048n17b07_dnjdb86c200000gp/T/fire_emu_715ca1d7e3a019ef.sock"}}
+[debug] [2023-02-01T20:41:56.581Z] [worker-us-central1-api-e8699413-3f7d-4807-be77-f96bc37b04e1]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-e8699413-3f7d-4807-be77-f96bc37b04e1]: IDLE"}}
+[debug] [2023-02-01T20:41:56.581Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[debug] [2023-02-01T20:41:56.581Z] [worker-us-central1-api-e8699413-3f7d-4807-be77-f96bc37b04e1]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-e8699413-3f7d-4807-be77-f96bc37b04e1]: BUSY"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
+[debug] [2023-02-01T20:41:56.584Z] [worker-us-central1-api-e8699413-3f7d-4807-be77-f96bc37b04e1]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-e8699413-3f7d-4807-be77-f96bc37b04e1]: IDLE"}}
+[debug] [2023-02-01T20:41:56.584Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[info] i  functions: Finished "api" in 1.55075ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in 1.55075ms"}}
+[debug] [2023-02-01T20:56:30.513Z] File /Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/index.js changed, reloading triggers"}}
+[debug] [2023-02-01T20:56:31.517Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-02-01T20:56:32.107Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.8.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-02-01T20:56:32.107Z] Building nodejs source
+[debug] [2023-02-01T20:56:32.108Z] Failed to find version of module node: reached end of search path /Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules
+[info] ✔  functions: Using node@16 from host. 
+[debug] [2023-02-01T20:56:32.109Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-02-01T20:56:32.110Z] Found firebase-functions binary at '/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-02-01T20:56:32.234Z] Serving at port 8876
+
+[debug] [2023-02-01T20:56:32.297Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-02-01T20:56:32.302Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-02-01T20:56:32.305Z] [worker-pool] Shutting down IDLE worker (us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-api)"}}
+[debug] [2023-02-01T20:56:32.305Z] [worker-us-central1-api-e8699413-3f7d-4807-be77-f96bc37b04e1]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-e8699413-3f7d-4807-be77-f96bc37b04e1]: FINISHING"}}
+[debug] [2023-02-01T20:56:32.313Z] [worker-us-central1-api-e8699413-3f7d-4807-be77-f96bc37b04e1]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-e8699413-3f7d-4807-be77-f96bc37b04e1]: exited"}}
+[debug] [2023-02-01T20:56:32.313Z] [worker-us-central1-api-e8699413-3f7d-4807-be77-f96bc37b04e1]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-e8699413-3f7d-4807-be77-f96bc37b04e1]: FINISHED"}}
+[debug] [2023-02-01T21:02:44.389Z] [work-queue] {"queuedWork":["/clone-f6853/us-central1/api/payments/create-2023-02-01T21:02:44.389Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-02-01T21:02:44.391Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/clone-f6853/us-central1/api/payments/create-2023-02-01T21:02:44.389Z"],"workRunningCount":1}
+[debug] [2023-02-01T21:02:44.391Z] Accepted request POST /clone-f6853/us-central1/api/payments/create?total=26899 --> us-central1-api
+[debug] [2023-02-01T21:02:44.409Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-02-01T21:02:44.409Z] [functions] Got req.url=/clone-f6853/us-central1/api/payments/create?total=26899, mapping to path=/payments/create?total=26899 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/clone-f6853/us-central1/api/payments/create?total=26899, mapping to path=/payments/create?total=26899"}}
+[debug] [2023-02-01T21:02:44.409Z] [worker-pool] Cleaned up workers for us-central1-api: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-api: 1 --> 0"}}
+[debug] [2023-02-01T21:02:44.417Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2023-02-01T21:02:44.417Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
+[debug] [2023-02-01T21:02:45.144Z] [runtime-status] [66428] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [66428] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2023-02-01T21:02:45.145Z] [runtime-status] [66428] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [66428] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2023-02-01T21:02:45.145Z] [runtime-status] [66428] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [66428] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2023-02-01T21:02:45.145Z] [runtime-status] [66428] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [66428] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2023-02-01T21:02:45.172Z] [runtime-status] [66428] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [66428] Checked functions.config() {\"config\":{}}"}}
+[debug] [2023-02-01T21:02:45.172Z] [runtime-status] [66428] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [66428] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2023-02-01T21:02:45.172Z] [runtime-status] [66428] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [66428] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2023-02-01T21:02:45.172Z] [runtime-status] [66428] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [66428] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2023-02-01T21:02:45.172Z] [runtime-status] [66428] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [66428] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2023-02-01T21:02:45.173Z] [runtime-status] [66428] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [66428] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2023-02-01T21:02:45.244Z] [runtime-status] [66428] Functions runtime initialized. {"cwd":"/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions","node_version":"16.14.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [66428] Functions runtime initialized. {\"cwd\":\"/Users/premchandersatheesh/git/premc98/Projects/amazon-clone/functions\",\"node_version\":\"16.14.0\"}"}}
+[debug] [2023-02-01T21:02:45.244Z] [runtime-status] [66428] Listening to port: /var/folders/4s/_53l048n17b07_dnjdb86c200000gp/T/fire_emu_c901d84b7b6ce5ef.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [66428] Listening to port: /var/folders/4s/_53l048n17b07_dnjdb86c200000gp/T/fire_emu_c901d84b7b6ce5ef.sock"}}
+[debug] [2023-02-01T21:02:45.336Z] [worker-us-central1-api-7cb0f853-2885-40aa-9c62-a823c9009b13]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-7cb0f853-2885-40aa-9c62-a823c9009b13]: IDLE"}}
+[debug] [2023-02-01T21:02:45.336Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[debug] [2023-02-01T21:02:45.336Z] [worker-us-central1-api-7cb0f853-2885-40aa-9c62-a823c9009b13]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-7cb0f853-2885-40aa-9c62-a823c9009b13]: BUSY"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
+[info] >  payment request received for amount 26899 {"user":"payment request received for amount 26899","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m payment request received for amount 26899"}}
+[debug] [2023-02-01T21:02:45.861Z] [worker-us-central1-api-7cb0f853-2885-40aa-9c62-a823c9009b13]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-7cb0f853-2885-40aa-9c62-a823c9009b13]: IDLE"}}
+[debug] [2023-02-01T21:02:45.861Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[info] i  functions: Finished "api" in 519.063208ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in 519.063208ms"}}

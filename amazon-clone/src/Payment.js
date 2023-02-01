@@ -49,7 +49,7 @@ function Payment() {
             card: elements.getElement(CardElement)
         }
     
-    }).then(({ paymentIntent}) => {
+    }).then(({paymentIntent}) => {
         //paymentIntent is the payment confirmation
         setSucceeded(true);
         setError(null);
