@@ -39,6 +39,8 @@ function Payment() {
     getClientSecret();
   }, [basket]) //   for every change in basket a new charge (secret) has to be generated
 
+  console.log('The Secret is', clientSecret)
+
   const handleSubmit = async e => {
     // stripe stuff
     e.preventDefault();
