@@ -14,7 +14,7 @@ function Home() {
             
             <div className='home_row'>
                 <Product 
-                    id="1234567"
+                    id="12345678"
                     title="Casio watch" 
                     price={29.99}
                     image="https://upload.wikimedia.org/wikipedia/commons/a/a4/Casio-TC500-Calculator-Watch.jpg"

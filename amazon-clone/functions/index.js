@@ -1,7 +1,7 @@
 const functions = require("firebase-functions");
 const express = require("express");
 const cors = require("cors");
-const stripe = require("stripe")('sk_test_51MWjttFxrILRHLpEXxQirsSg0SVgqGfMb9dEBxKuAz58tETbY4JjMkYtUYhgA09mEgd34bIgbQqBmDxESPZiOmiM00lUSw9IyE');
+const stripe = require("stripe")("sk_test_51MWjttFxrILRHLpEXxQirsSg0SVgqGfMb9dEBxKuAz58tETbY4JjMkYtUYhgA09mEgd34bIgbQqBmDxESPZiOmiM00lUSw9IyE");
 
 //API
 
@@ -23,8 +23,11 @@ app.post('/payments/create', async (request, response) => {
     });
 
     //ok created
+    console.log('client_secret', paymentIntent.client_secret)
     response.status(201).send({
+        
         clientSecret: paymentIntent.client_secret,
+        
 
     })
 
